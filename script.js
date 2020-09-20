@@ -18,11 +18,12 @@ var charLower = "abcdefghijklmnopqrstuvwxyz";
 var numSet = "0123456789";
 var symSet = "!@#$%^&*()_+-={}[]|:;,./<>'\"?";
 
-//Execute prompt  to get length of password and confirms criteria
-function generatePassword() {
-  var length;
 
-  //Checking for valid length
+function generatePassword() {
+//Execute prompt  to get length of password and confirms criteria
+//Checking for valid length
+  
+  var length;
   do {
     length = prompt("Please enter the length of password between 8 to 128.");
     //transfer string to integer
