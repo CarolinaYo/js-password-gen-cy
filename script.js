@@ -12,49 +12,78 @@
 // * Gather user input with prompt's and confirm's
 
 //Master character set
-Var masterChar = {
-  charUpper: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-  charLower: "abcdefghijklmnopqrstuvwxyz",
-  numSet: "0123456789",
- //not liking the " symbol
-  symSet: "!@#$%^&*()_+-={}[]|\:;,./<>'?",
-}
 
-//or this?
- var charUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
- var charLower = "abcdefghijklmnopqrstuvwxyz";
- var numSet = "0123456789";
- //not liking the " symbol
- var symSet = "!@#$%^&*()_+-={}[]|\:;,./<>'?";
+var charUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var charLower = "abcdefghijklmnopqrstuvwxyz";
+var numSet = "0123456789";
+var symSet = "!@#$%^&*()_+-={}[]|:;,./<>'\"?";
 
-//-----Execute prompts after the button click---as told in the HW requirement---
+//Execute prompt  to get length of password and confirms criteria
+function generatePassword() {
+  var length;
 
-function writePassword(){
-  var length = prompt("Please enter the length of password between 8 to 128.");
-    if (length < 8 || length > 128 || length === ""){
-      alert ("Please set password length between 8 and 128 long.");
-      //HELP!!need to return to re enter, run a loop
-    };
-    
-  var uppercase = confirm("Would you like to include uppercase letters?");
-  var lowercase = confirm("Would you like to include lowecase letters?");
-  var numbers = confirm("Would you like to include numbers?");
-  var special = confirm("Would you like to include special characters?");
- 
-  //MUST select one criteria----- this code seems so raw....any better way???
-    if (uppercase === false && lowercase === false && numbers === false && special === false){
-      alert ("Please select at least one criteria.");
-      //again....need to go back to run these propmts automatically???
+  //Checking for valid length
+  do {
+    length = prompt("Please enter the length of password between 8 to 128.");
+    //transfer string to integer
+    if (length) {
+      length = parseInt(length);
     }
+
+    if (length < 8 || length > 128 || !length) {
+      alert("Please set password length between 8 and 128 long.");
+    }
+  } while (length < 8 || length > 128 || !length);
+
+  //Checkig for criteria
+  do {
+    var uppercase = confirm("Would you like to include upper-case letters?");
+    var lowercase = confirm("Would you like to include lowecase letters?");
+    var numbers = confirm("Would you like to include numbers?");
+    var special = confirm("Would you like to include special characters?");
+
+    if (
+      uppercase === false &&
+      lowercase === false &&
+      numbers === false &&
+      special === false
+    ) {
+      alert("Please select at least one criteria.");
+    }
+  } while (
+    uppercase === false &&
+    lowercase === false &&
+    numbers === false &&
+    special === false
+  );
+
+  //collecting strings of data required
+  var pool = "";
+
+  if (uppercase) {
+    pool += charUpper;
   }
 
-  //loop to choose the characters----LOST
+  if (lowercase) {
+    pool += charLower;
+  }
 
-  for(var i=0; i<=length; i++){
-    let password = "";
-    password = 
-    
-    
+  if (numbers) {
+    pool += numSet;
+  }
+
+  if (special) {
+    pool += symSet;
+  }
+
+  var password = "";
+
+  for (var i = 0; i <= length; i++) {
+    var groupIndex = Math.floor(Math.random() * pool.length);
+    password += pool.charAt(groupIndex);
+  }
+}
+
 //////////////////////////////////////////////////////////////////////
 // DO NOT TOUCH THIS CODE
 //
@@ -77,9 +106,3 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 //////////////////////////////////////////////////////////////////////
-
-
-
-
- 
-
