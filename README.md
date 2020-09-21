@@ -8,7 +8,7 @@ Using JavaScript, the website will generate new password for the user.  The appl
 
 This application must be able to process inputs prompting:
 * User's input of length desired for the password
-* Certain criteria such as the inclusion of: **upper case, lower case, numbers, special characters,** to build a strong password.
+* Certain criteria such as the inclusion of: **uppercase, lowercase, numbers, special characters,** to build a strong password.
 
 Language used:
 * Html
