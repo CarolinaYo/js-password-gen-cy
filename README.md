@@ -21,13 +21,13 @@ Language used:
 
 ![Start page](/Assets/readme/startpage.png)
 
-2. ### After clicking **Generate Password**, user will be presented with a series of criteria prompts:
+2. ### After clicking "Generate Password", user will be presented with a series of criteria prompts:
 
     1. Requesting for length of password
-    ![Start page](/Assets/readme/p1_length.png)
+    ![Length input](/Assets/readme/p1_length.png)
 
     _1.a   Invalid value or range warning_ will appear when user enter a length that is out of the range or a non numerical value.  User will be navigated back to the previous prompt before proceeding to the next option.
-        ![Invalid input warning](/Assets/readme/invalid_warning1.PNG)
+    ![Invalid input warning](/Assets/readme/invalid_warning1.PNG)
 
     2. Requesting criteria selection uppercase
     ![Uppercase criteria](/Assets/readme/p2_uppercase.png) 
@@ -42,11 +42,11 @@ Language used:
     ![Special symbol criteria](/Assets/readme/p5_symbol.png)
 
     _5.a No selection warning_will appear when no criteria was selected.  User will be navigated back to the selection of criteria prompts.
-        ![Invalid selection warning](/Assets/readme/invalid_warning2.png)
+    ![Invalid selection warning](/Assets/readme/invalid_warning2.png)
 
 3. ### Password will be generated after user satisfied required input and criteria.
 
-    ![Generating Password](/Assets/readme/final.png)
+    ![Generate Password](/Assets/readme/final.png)
 
 ## MAINTAINER 
 This is an individual assignment created by Carolina Yoedhana.
