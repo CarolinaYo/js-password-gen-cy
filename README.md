@@ -17,11 +17,11 @@ Language used:
 
 ## STEPS
 
-1. ### User will begin on a start page:
+### 1. User will begin on a start page:
 
 ![Start page](/Assets/readme/startpage.PNG)
 
-2. ### After clicking "Generate Password", user will be presented with a series of criteria prompts:
+### 2. After clicking "Generate Password", user will be presented with a series of criteria prompts:
 
 a. Requesting for length of password. 
 * ![Length input](/Assets/readme/p1_length.png)
@@ -44,7 +44,7 @@ e. Requesting criteria selection number.
 _-  No selection warning_ will appear when no criteria was selected.  User will be navigated back to the selection of criteria prompts. 
 * ![Invalid selection warning](/Assets/readme/invalid_warning2.png)
 
-3. ### Password will be generated after user satisfied required input and criteria. 
+### 3. Password will be generated after user satisfied required input and criteria. 
 ![Generate Password](/Assets/readme/Final.PNG)
 
 ## MAINTAINER 
