@@ -29,16 +29,16 @@ a. Requesting for length of password.
 _-   Invalid value or range warning_ will appear when user enter a length that is out of the range or a non numerical value.  User will be navigated back to the previous prompt before proceeding to the next option. 
 * ![Invalid input warning](/Assets/readme/invalid_warning1.png)
 
-b. Requesting criteria selection uppercase. 
+b. Requesting criteria selection of uppercase. 
 * ![Uppercase criteria](/Assets/readme/p2_uppercase.png) 
 
-c. Requesting criteria selection lowecase. 
+c. Requesting criteria selection of lowercase. 
 * ![Lowercase criteria](/Assets/readme/p3_lowercase.png) 
 
-d. Requesting criteria selection numeric value. 
+d. Requesting criteria selection of numeric value. 
 * ![Numeric criteria](/Assets/readme/p4_number.png) 
 
-e. Requesting criteria selection number. 
+e. Requesting criteria selection of special character. 
 * ![Special symbol criteria](/Assets/readme/p5_symbol.png)
 
 _-  No selection warning_ will appear when no criteria was selected.  User will be navigated back to the selection of criteria prompts. 
