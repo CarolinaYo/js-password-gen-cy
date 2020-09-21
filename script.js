@@ -38,8 +38,8 @@ function generatePassword() {
 
   //Checkig for criteria
   do {
-    var uppercase = confirm("Would you like to include upper-case letters?");
-    var lowercase = confirm("Would you like to include lowecase letters?");
+    var uppercase = confirm("Would you like to include uppercase letters?");
+    var lowercase = confirm("Would you like to include lowercase letters?");
     var numbers = confirm("Would you like to include numbers?");
     var special = confirm("Would you like to include special characters?");
 
@@ -77,12 +77,13 @@ function generatePassword() {
     pool += symSet;
   }
 
-  var password = "";
+  var newpassword = "";
 
-  for (var i = 0; i <= length; i++) {
+  for (var i = 0; i < length; i++) {
     var groupIndex = Math.floor(Math.random() * pool.length);
-    password += pool.charAt(groupIndex);
+    newpassword += pool.charAt(groupIndex);
   }
+  return newpassword
 }
 
 //////////////////////////////////////////////////////////////////////
