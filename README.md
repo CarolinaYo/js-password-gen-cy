@@ -41,7 +41,8 @@ d. Requesting criteria selection numeric value.
 e. Requesting criteria selection number. 
 * ![Special symbol criteria](/Assets/readme/p5_symbol.png)
 
-_-  No selection warning_ will appear when no criteria was selected.  User will be navigated back to the selection of criteria prompts. ![Invalid selection warning](/Assets/readme/invalid_warning2.png)
+_-  No selection warning_ will appear when no criteria was selected.  User will be navigated back to the selection of criteria prompts. 
+* ![Invalid selection warning](/Assets/readme/invalid_warning2.png)
 
 3. ### Password will be generated after user satisfied required input and criteria. 
 ![Generate Password](/Assets/readme/Final.PNG)
