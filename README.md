@@ -27,7 +27,7 @@ Language used:
     ![Length input](/Assets/readme/p1_length.png)
 
     _1.a   Invalid value or range warning_ will appear when user enter a length that is out of the range or a non numerical value.  User will be navigated back to the previous prompt before proceeding to the next option.
-    ![Invalid input warning](/Assets/readme/invalid_warning1.PNG)
+    ![Invalid input warning](/Assets/readme/invalid_warning1.png)
 
     2. Requesting criteria selection uppercase
     ![Uppercase criteria](/Assets/readme/p2_uppercase.png) 
