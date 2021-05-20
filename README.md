@@ -2,7 +2,7 @@
 
 ## INRODUCTION
 
-Using JavaScript, this application will generate a password for user. The application will run in the browser prompting a series of user's input and generate a password that satisfy user's selected criteria.
+Using JavaScript, this application generates a password for user. The application will run in the browser prompting a series of user's input and generate a password that satisfy user's selected criteria.
 
 ## REQUIREMENT
 
